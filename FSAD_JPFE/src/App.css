@@ -1,0 +1,234 @@
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  background-color: #f8f9fa;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+}
+
+#header {
+  width: 100%;
+  height: 70px;
+  background: white;
+}
+
+#content {
+  width: 100%;
+  height: calc(100% - 110px); 
+  background: #fdf1f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+
+#footer {
+  width: 100%;
+  height: 40px;
+  background: white;
+}
+
+#header .logo {
+  width: 40px;
+  position: relative;
+  top: 15px;
+  margin-left: 10px;
+  float: left;
+}
+
+#header .logoText {
+  position: relative;
+  top: 15px;
+  font-size: 24pt;
+  font-weight: bold;
+  margin-left: 10px;
+  float: left;
+  color: #3c4652;
+}
+
+#header .logoText span {
+  color: #2d7abe;
+}
+
+#header .signinIcon {
+  width: 24px;
+  position: relative;
+  float: right;
+  top: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#header .signinText {
+  position: relative;
+  float: right;
+  top: 25px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#header .signinText:hover, 
+.signinIcon:hover + .signinText {
+  text-decoration: underline;
+}
+
+#footer .copyrightText {
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+  font-size: 7pt;
+  color: grey;
+}
+
+#footer .socialmediaIcon {
+  width: 16px;
+  position: relative;
+  float: right;
+  top: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#content .text1 {
+  position: relative;
+  text-align: center;
+  font-size: 14pt;
+  font-weight: bold;
+  color: rgb(13, 130, 104);
+  margin-bottom: 10px;
+}
+
+#content .text2 {
+  position: relative;
+  text-align: center;
+  font-size: 32pt;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#content .text3 {
+  position: relative;
+  text-align: center;
+  font-size: 14pt;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+#content .searchBar {
+    position: relative;
+    display: flex;
+    background-color: white;
+    border-radius: 15px; 
+    width: 700px;
+    height: 50px;
+    padding: 5px;
+    gap: 10px;
+}
+
+.select-skill {
+    width: 400px;
+    font-size: 14px;
+}
+
+.select-location {
+    width: 300px;
+    font-size: 14px;
+}
+
+/* Remove old search input styles */
+.searchBar .searchText,
+.searchBar .searchLocation {
+    display: none;
+}
+
+.search-btn {
+    width: 200px !important;
+    font-size: 1.1rem !important;
+    padding: 10px 20px !important;
+}
+
+/* Remove the old searchButton styles as we're not using them anymore */
+.searchBar .searchButton {
+    display: none;
+}
+
+#popup {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  position: fixed;
+  z-index: 999;
+  display: none;
+}
+
+#popupWindow {
+  width: 300px;
+  position: relative;
+  background: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+}
+
+#popupHeader {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background: rgb(13, 180, 104);
+  color: white;
+  font-size: 14pt;
+  font-weight: bold;
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+#signin {
+  padding: 20px;
+}
+
+#signin .form-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#signin .forgotPassword {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  text-align: right;
+}
+
+#signin .forgotPassword label {
+  color: rgb(13, 180, 104);
+  cursor: pointer;
+}
+
+#signin .forgotPassword label:hover {
+  color: rgb(13, 150, 104);
+}
+
+#signin .btn {
+  margin-bottom: 10px;
+}
